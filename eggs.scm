@@ -8,7 +8,7 @@
 (define (grass-pattern-help x width height)
   (if (= width x) (list (list width height))
       (cons (list (+ x 5)
-                  (- height (+ 25 (random (floor (/ height 2))))))
+                  (- height (+ 25 (random 75))))
             (cons (list (+ x 10) (- height 25))
                   (grass-pattern-help (+ x 10) width height)))))
 
